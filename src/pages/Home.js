@@ -7,6 +7,7 @@
 function Home() {
     const navigate = useNavigate()
   return (
+    <MainBG>,
     <Header />,
     <div>
         test 
