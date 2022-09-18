@@ -15,14 +15,14 @@ function Home() {
             <div class="MainText">
                 당신을 위한 인테리어 플랫폼
             </div>
-            <div>
+            <div class="buttonA">
               <button type="button" onclick="location.href='/'">
                 테스트 시작하기
               </button>
             </div>
-            <div>
+            <div class="buttonB">
               <button type="button" onclick="location.href='/'">
-                글 작성
+                커뮤니티
               </button>
             </div>
         </p>

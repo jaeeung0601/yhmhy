@@ -19,6 +19,15 @@
   padding: 0.25em 1em;
   position: absolute; left: 30px; top: 30px;
 }
+.login {
+  background: palevioletred;
+  font-size: 2em;
+  border: 2px solid palevioletred;
+  color: white;
+  margin: 0.2em;
+  padding: 0.25em 1em;
+  position: absolute; right: 30px; top: 30px;
+}
   
 .MainWrapper {
   position: absolute;
@@ -26,19 +35,25 @@
   min-width: 100vw;
   display: grid;
   place-items: center;
+  grid-template-areas:
+		"MainText MainText"
+		"   a     c  "
+		"   b     c  ";
   background-color: rgba(255, 255, 255, 0.8);
 
 }
-.leftLayout {
-  float: left;
-}
-.rightLayout {
-  float: right;
-}
 
+.buttonA {
+    grid-area: a;
+}
+.buttonB {
+    grid-area: b;
+}
 h3 {
     font-size: 3rem;
+    grid-area: MainText;
 }
 div.MainText {
+    grid-area: c;
     font-size: 1rem;
 }
