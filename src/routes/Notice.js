@@ -1,6 +1,7 @@
 import React from "react";
 import '../App.css';
 import './assets/Style.css';
+import Post from "./Post";
 
 function App() {
   return (
@@ -8,10 +9,13 @@ function App() {
     <div className="Noticeheader">
 
       <img className="NoticeheaderImage"
-      src="https://img.icons8.com/emoji/48/000000/heart-suit.png"
+      src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png"
       alt=""/>
     </div>
     <h1>게시판</h1>
+
+    <Post />
+
     </div>
   );
 }

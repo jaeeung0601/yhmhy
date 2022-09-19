@@ -2,13 +2,21 @@
     margin: 0; 
 }
 
-.Notice{
+.App{
     background-color: #fafafa;
-    height: 100vh;
+    height: 1000vh;
 }
 
 .NoticeheaderImage{
     background-color: white;
     padding: 20px;
+    border-bottom: 1px solid lightgray;
     object-fit: contain;
 }
+
+/* post css */
+.postImage {
+    width: 50%;
+    object-fit: contain;
+}
+
