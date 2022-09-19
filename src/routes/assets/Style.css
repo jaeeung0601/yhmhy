@@ -1,0 +1,14 @@
+* {
+    margin: 0; 
+}
+
+.Notice{
+    background-color: #fafafa;
+    height: 100vh;
+}
+
+.NoticeheaderImage{
+    background-color: white;
+    padding: 20px;
+    object-fit: contain;
+}
