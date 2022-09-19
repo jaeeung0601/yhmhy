@@ -12,7 +12,7 @@ function App() {
       src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png"
       alt=""/>
     </div>
-    <h1>게시판</h1>
+    <h1>게시판z</h1>
 
     <Post />
 
