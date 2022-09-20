@@ -16,12 +16,12 @@ function Home() {
                 당신을 위한 인테리어 플랫폼
             </div>
             <div class="buttonA">
-              <button class="btn fifth" type="button" onclick="location.href='/'">
+              <button class="btn homebtn" type="button" onclick="location.href='/'">
                 테스트 시작하기
               </button>
             </div>
             <div class="buttonB">
-              <button class="btn fifth" type="button" onclick="location.href='/'">
+              <button class="btn homebtn" type="button" onclick="location.href='/'">
                 커뮤니티
               </button>
             </div>
