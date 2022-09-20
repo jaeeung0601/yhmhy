@@ -1,7 +1,7 @@
 import React from 'react';
 import './Test.css'
 import { QuestionData } from '../asset/data/questionData'
-//import { ProgressBar, Button } from 'react-bootstrap'
+import { ProgressBar } from 'react-bootstrap'
 import { createSearchParams, useNavigate } from 'react-router-dom'
 
 const TestQuestion = () =>{
@@ -39,10 +39,13 @@ const TestQuestion = () =>{
     } 
   }
   return (
-    <div className='testmain'>
-      <h1>{QuestionData[questionNo].title}</h1>
-      <button onClick={()=>handClickButton(1, QuestionData[questionNo].type)}>{QuestionData[questionNo].answera}</button>
-      <button onClick={()=>handClickButton(0, QuestionData[questionNo].type)}>{QuestionData[questionNo].answerb}</button>
+    <div className='testquestion'>
+      <ProgressBar variant="dark" now={(questionNo/QuestionData.length*100)} style={{marginTop:'20px'}}/>
+      <div className='questionitem'>
+        <h1>{QuestionData[questionNo].title}</h1>
+        <button onClick={()=>handClickButton(1, QuestionData[questionNo].type)}>{QuestionData[questionNo].answera}</button>
+        <button onClick={()=>handClickButton(0, QuestionData[questionNo].type)}>{QuestionData[questionNo].answerb}</button>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Test.css'
+import './Button.css'
 import testmain from '../asset/interior/test_main.jpg'
 import { useNavigate } from 'react-router-dom'
 
