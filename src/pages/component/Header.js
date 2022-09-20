@@ -4,12 +4,20 @@ import { useNavigate } from "react-router-dom";
 
 function Header() {
 const navigate = useNavigate()
+const handleClickButton = ()=>{
+    //useHistory
+    navigate('/Home')
+}
+const handleClickButtonLogin = ()=>{
+    //useHistory
+    navigate('/Login')
+}
 return (
     <div>
-    <button class="btn header logo" type="button" onclick="location.href='/'">
+    <button className="btn header logo" type="button" onClick={handleClickButton}>
         Logo
     </button>
-    <button class="btn header login" type="button" onclick="location.href='/Login'">
+    <button className="btn header login" type="button" onClick={handleClickButtonLogin}>
          LogIn
     </button>
     </div>

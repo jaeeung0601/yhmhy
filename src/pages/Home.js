@@ -5,28 +5,32 @@
 
 function Home() {
     const navigate = useNavigate()
+    const handleClickButton = ()=>{
+      //useHistory
+      navigate('/Home')
+  }
   return (
-    <p class= "MainBG">
+    <div className= "MainBG">
       <Header />,
-        <p class= "MainWrapper">
+        <div className= "MainWrapper">
           <h3>
           니집내집
           </h3>
-            <div class="MainText">
+            <div className="MainText">
                 당신을 위한 인테리어 플랫폼
             </div>
-            <div class="buttonA">
-              <button class="btn homebtn" type="button" onclick="location.href='/'">
+            <div className="buttonA">
+              <button className="btn homebtn" type="button" onClick={handleClickButton}>
                 테스트 시작하기
               </button>
             </div>
-            <div class="buttonB">
-              <button class="btn homebtn" type="button" onclick="location.href='/'">
+            <div className="buttonB">
+              <button className="btn homebtn" type="button" onClick={handleClickButton}>
                 커뮤니티
               </button>
             </div>
-        </p>
-    </p>
+        </div>
+    </div>
 
   );
 }
