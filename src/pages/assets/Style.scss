@@ -1,4 +1,47 @@
+//header style
+.headerContainer {
+  height:15vh;
+  width:100vw;
+  position:absolute;
+  grid-area: Header;
+}
+.btn.header{
+  color:#fff;
+  border:none;
+  background:#5DC8CD;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #3498db;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+  }
+  
+  &:hover {
+    color: #fff;
+    &:after {
+      width: 110%;
+    }
+  }
+}
+.logo {
+  position: absolute; left: 15px; top: 15px;
+}
+.login {
+  position: absolute; right: 15px; top: 15px;
+ 
+}
 
+//Home style
 .MainBG {
   height: 100vh;
   width: 100vw;
@@ -7,14 +50,13 @@
   background-size: cover;
   object-fit: cover;
   display: grid;
-  place-items: center;
   margin:0;
+
 }
 
-  
 .MainWrapper {
-  position: absolute;
-  min-height: 50vh;
+  position: static;
+  height: 50vh;
   min-width: 100vw;
   display: grid;
   place-items: center;
@@ -30,7 +72,7 @@
     grid-area: a;
     place-items: center;
   }
-  .buttonB {
+.buttonB {
     place-items: center;
     grid-area: b;
   }
@@ -82,41 +124,6 @@ $turquoise: #1abc9c;
     color: #fff;
     outline: 0;
   }
-}
-.btn.header{
-  color:#fff;
-  border:none;
-  background:#5DC8CD;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 150ms ease-in-out;
-  &:after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 100%;
-    background: #3498db;
-    z-index: -1;
-    transition: width 150ms ease-in-out;
-  }
-  
-  &:hover {
-    color: #fff;
-    &:after {
-      width: 110%;
-    }
-  }
-}
-.logo {
-  position: absolute; left: 30px; top: 30px;
-}
-.login {
-  position: absolute; right: 30px; top: 30px;
- 
 }
 .homebtn {
   justify-content:center;
