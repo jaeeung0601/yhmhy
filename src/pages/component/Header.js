@@ -6,7 +6,7 @@ function Header() {
 const navigate = useNavigate()
 const handleClickButton = ()=>{
     //useHistory
-    navigate('/Home')
+    navigate('/')
 }
 const handleClickButtonLogin = ()=>{
     //useHistory
@@ -15,7 +15,7 @@ const handleClickButtonLogin = ()=>{
 return (
     <div>
     <button className="btn header logo" type="button" onClick={handleClickButton}>
-        Logo
+        <i className="fa-sharp fa-solid fa-house"></i>
     </button>
     <button className="btn header login" type="button" onClick={handleClickButtonLogin}>
          LogIn
