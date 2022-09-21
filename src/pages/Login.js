@@ -1,14 +1,29 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import Header from "./component/Header";
-import './assets/Style.scss';
+import '../App.css';
+import React,{useEffect, useState} from 'react';
+import Router from './component/Router'
+import {authService} from '../fbase'
 
-function Login() {
-    const navigate = useNavigate()
+function App() {
+  const [init,setInit] = useState(false)
+  const [isLoggedIn,setIsLoggedIn] = useState(false)
+  const [userObj,setUserObj] = useState(null)
+  useEffect(()=>{
+    authService.onAuthStateChanged((user)=>{
+      if(user){
+        setIsLoggedIn(true)
+        setUserObj(user)
+      }else{
+        setIsLoggedIn(false)
+      }
+      setInit(true)
+      })
+    },[])
   return (
     <div>
-        <Header />
+      {init ? <Router isLoggedIn={isLoggedIn} userObj={userObj} /> : 'Initializing...' }
+      {/* <footer>&copy; Nwitter {new Date().getFullYear()} </footer> */}
     </div>
   );
 }
-export default Login;
+
+export default App;
