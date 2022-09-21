@@ -3,7 +3,7 @@ import './assets/Post.css';
 import Avatar from '@mui/material/Avatar';
 
 
-function Post() {
+function Post({username ,caption,imageUrl}) {
   return (
     <div className='post'>
       <div className='postHeader'>
@@ -12,15 +12,14 @@ function Post() {
         alt='RafeQazi'
         src="/static/images/avater/1.png"
       />
-      <h3>username</h3>
+      <h3>{username}</h3>
       </div>
     {/* header -> avatar -> username */}
     
-    <img className='postImage'  src="https://picsum.photos/320/240?random=5#.YygKSefSkWs.link"
-    alt="" />
+    <img className='postImage'  src={imageUrl} alt="" />
     {/* image */}
 
-    <h4 className='postText'><strong>Username:</strong> captiondd</h4>
+    <h4 className='postText'><strong>{username}</strong> {caption}</h4>
     {/* username -> caption */}
 
     </div>

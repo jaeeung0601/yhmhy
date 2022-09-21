@@ -13,7 +13,11 @@ function App() {
       alt=""/>
     <h1>fassadakl</h1>
     </div>
-    <Post />
+
+    <Post username="cleverqazi" caption="wow it works" imageUrl="https://picsum.photos/320/240?random=5#.YygKSefSkWs.link" />
+    <Post username="sdadsa" caption="hello dped" imageUrl="https://picsum.photos/200/300" />
+    <Post username="fwasdd" caption="안녕하세요" imageUrl="https://picsum.photos/200" />
+
 
     </div>
   );
