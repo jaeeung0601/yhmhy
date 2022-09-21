@@ -1,0 +1,26 @@
+/* post css */
+.post{
+    background-color: white;
+    max-width: 500px;
+    border: 1px solid lightgray;
+}
+
+
+.postImage {
+    width: 100%;
+    object-fit: contain;
+}
+
+.postText{
+    font-weight: normal;
+    padding: 20px;
+}
+.postHeader{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.postAvater{
+   margin-right: 10px; 
+}

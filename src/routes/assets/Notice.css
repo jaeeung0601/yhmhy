@@ -2,7 +2,7 @@
     margin: 0; 
 }
 
-.App{
+.app{
     background-color: #fafafa;
     height: 100vh;
 }
@@ -14,9 +14,4 @@
     object-fit: contain;
 }
 
-/* post css */
-.postImage {
-    width: 50%;
-    object-fit: contain;
-}
 
