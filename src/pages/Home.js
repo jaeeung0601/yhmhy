@@ -7,7 +7,7 @@ function Home() {
     const navigate = useNavigate()
     const handleClickButton = ()=>{
       //useHistory
-      navigate('/Home')
+      navigate('/')
   }
   return (
     <div className= "MainBG">
