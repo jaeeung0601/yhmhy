@@ -11,7 +11,7 @@ function App() {
       <img className="NoticeheaderImage"
       src=" https://cdn-icons-png.flaticon.com/256/7207/7207414.png"
       alt=""/>
-    <h1>fassadakl</h1>
+    <h1>fassaddssdakl</h1>
     </div>
 
     <Post username="cleverqazi" caption="wow it works" imageUrl="https://picsum.photos/320/240?random=5#.YygKSefSkWs.link" />
