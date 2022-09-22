@@ -9,7 +9,7 @@ import Company from '../dataimg/company.jpg'
 import Travel from '../dataimg/travel.jpg'
 import Iuggage from '../dataimg/luggage.jpg'
 import Interior from '../dataimg/interior.jpg'
-//import Promise from '../dataimg/promise.jpg'
+import Promisea from '../dataimg/promise.jpg'
 export const QuestionData = [
   {
     id: 1,
@@ -105,6 +105,6 @@ export const QuestionData = [
     answera: "'엥? 그게 이유라고? 그것까지 고려해서 더 일찍 나왔어야지!'",
     answerb: "(아직 가는 중)",
     type: "JP",
-    image: `${Interior}`
+    image: `${Promisea}`
   }
 ]
