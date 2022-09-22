@@ -17,5 +17,15 @@
   text-align: center;
 }
 .questionitem{
-  margin-top: 500px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.questionitem>h1{
+  margin-bottom: 30px;
+}
+.questionitem>img{
+  display: block; 
+  margin: 0px auto;
 }

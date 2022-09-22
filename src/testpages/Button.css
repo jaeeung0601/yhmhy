@@ -42,3 +42,9 @@
   width:100%;
   transition:800ms ease all;
 }
+.questionitem>button{
+  width: 600px;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 20px;
+}

@@ -43,8 +43,9 @@ const TestQuestion = () =>{
       <ProgressBar variant="dark" now={(questionNo/QuestionData.length*100)} style={{marginTop:'20px'}}/>
       <div className='questionitem'>
         <h1>{QuestionData[questionNo].title}</h1>
-        <button onClick={()=>handClickButton(1, QuestionData[questionNo].type)}>{QuestionData[questionNo].answera}</button>
-        <button onClick={()=>handClickButton(0, QuestionData[questionNo].type)}>{QuestionData[questionNo].answerb}</button>
+        <img src={QuestionData[questionNo].image} width={500} height={350} alt='question img'/>
+          <button onClick={()=>handClickButton(1, QuestionData[questionNo].type)}>{QuestionData[questionNo].answera}</button>
+          <button onClick={()=>handClickButton(0, QuestionData[questionNo].type)}>{QuestionData[questionNo].answerb}</button>
       </div>
     </div>
   )
