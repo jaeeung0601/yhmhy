@@ -1,5 +1,6 @@
 import React from 'react';
 import './Test.scss'
+import Header from '../component/Header'
 import { QuestionData } from '../assets/data/questionData'
 import { ProgressBar } from 'react-bootstrap';
 import { createSearchParams, useNavigate } from 'react-router-dom'
@@ -39,6 +40,8 @@ const TestQuestion = () =>{
     } 
   }
   return (
+    <div>
+      <Header />
     <div className='testquestion'>
       <ProgressBar variant="dark" now={(questionNo/QuestionData.length*100)} style={{marginTop:'20px'}}/>
       <div className='questionitem'>
@@ -47,6 +50,7 @@ const TestQuestion = () =>{
           <button onClick={()=>handClickButton(1, QuestionData[questionNo].type)}>{QuestionData[questionNo].answera}</button>
           <button onClick={()=>handClickButton(0, QuestionData[questionNo].type)}>{QuestionData[questionNo].answerb}</button>
       </div>
+    </div>
     </div>
   )
 }
