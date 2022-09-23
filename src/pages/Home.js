@@ -8,8 +8,12 @@ function Home() {
     const navigate = useNavigate()
     const handleClickButton = ()=>{
       //useHistory
-      navigate('/')
+      navigate('/TestHome')
   }
+  const handleClickButtonCM = ()=>{
+    //useHistory
+    navigate('/Community')
+}
   return (
     <div className= "MainBG">
       <Header />,
@@ -27,11 +31,11 @@ function Home() {
             <Fade clear delay={700}>
             <div className="buttonA">
               <button className="btn homebtn" type="button" onClick={handleClickButton}>
-                테스트 시작하기
+                테스트 <br />시작하기
               </button>
             </div>
             <div className="buttonB">
-              <button className="btn homebtn" type="button" onClick={handleClickButton}>
+              <button className="btn homebtn" type="button" onClick={handleClickButtonCM}>
                 커뮤니티
               </button>
             </div>

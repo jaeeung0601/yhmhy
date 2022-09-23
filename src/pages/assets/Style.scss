@@ -8,6 +8,15 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-family: '양진체';
+  src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+ 
 }
  //header style
 .headerContainer {
@@ -55,6 +64,7 @@
 
 //Home style
 .MainBG {
+  font-family: "S-CoreDream-3Light";
   height: 100vh;
   width: 100vw;
   background-image: url('MainBg.jpg');
@@ -93,6 +103,7 @@ h3 {
     grid-area: MainText;
 }
 div.MainText {
+    font-style: oblique;
     grid-area: c;
     font-size: 1rem;
 }
@@ -113,7 +124,7 @@ $turquoise: #1abc9c;
   cursor: pointer;
   display: flex;
   align-self: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1;
   margin: 20px;
@@ -121,7 +132,7 @@ $turquoise: #1abc9c;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'S-CoreDream-3Light';
   font-weight: 700;
 
   &:hover,
@@ -132,7 +143,7 @@ $turquoise: #1abc9c;
 }
 .homebtn {
   justify-content:center;
-  width:200px;
+  width:150px;
   border-color: #8e44ad;
   background-color: rgba(240, 248, 255, 0.7);
   border: 1 ;
