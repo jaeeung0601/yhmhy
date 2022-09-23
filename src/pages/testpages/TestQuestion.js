@@ -40,9 +40,9 @@ const TestQuestion = () =>{
     } 
   }
   return (
-    <div>
+    <div className='testQuestionMain'>
       <Header />
-    <div className='testquestion'>
+      <div className='testquestion'>
       <ProgressBar variant="dark" now={(questionNo/QuestionData.length*100)} style={{marginTop:'20px'}}/>
       <div className='questionitem'>
         <h1>{QuestionData[questionNo].title}</h1>
