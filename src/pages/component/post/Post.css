@@ -30,3 +30,7 @@
     width: 30%;
     text-align: center;
   }
+  .post__image{
+    width:100vw;
+    height: 100vmin;
+  }

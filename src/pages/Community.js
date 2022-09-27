@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Post from "./component/post/Post";
+import Post from "./component/post/Post.js";
 import "./assets/Community.scss";
 import { db, auth } from "../firebase/FirebaseInit";
 import { makeStyles } from "@material-ui/core";
@@ -90,10 +90,7 @@ function App() {
       <Modal open={openSignup} onClose={() => setOpenSignup(false)}>
         <div style={modalStyle} className={classes.paper}>
           <center>
-            <img
-              src=" https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-              alt="Instagram original logo"
-            />
+
           </center>
           <form className="app__signUp">
             <input
@@ -129,10 +126,7 @@ function App() {
       <Modal open={openLogin} onClose={() => setOpenLogin(false)}>
         <div style={modalStyle} className={classes.paper}>
           <center>
-            <img
-              src=" https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-              alt="Instagram original logo"
-            />
+
           </center>
           <form className="app__signUp">
             <input
@@ -153,18 +147,14 @@ function App() {
           </form>
           <center className="authFooter">
             <small>
-              &copy; 2021 Instagram Tribute by{" "}
-              <a href="mailto:bkrofegha@gmail.com"> Blessing Krofegha</a>
+
             </small>
           </center>
         </div>
       </Modal>
       <div className="app__header">
         <div className="app__headerWrapper">
-          <img
-            src=" https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-            alt="Instagram original logo"
-          />
+
           {user ? (
             <button className="text__button" onClick={() => auth.signOut()}>
               Logout

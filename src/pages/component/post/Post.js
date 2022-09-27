@@ -37,7 +37,7 @@ function Post({ postId, user, username, caption, imageUrl }) {
         <Avatar
           className="post__avatar"
           alt={username}
-          src="/static/images/avatar/1.jpg"
+
         />
         <h3>{username}</h3>
       </div>
