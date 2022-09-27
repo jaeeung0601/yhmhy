@@ -1,5 +1,5 @@
 siteurl:
-kaas12/netlify.app
+https://bejewelled-platypus-3a3fd8.netlify.app/
 npm install -g create-react-app
 npm install -g firebase-tools 
 npm install --global yarn
