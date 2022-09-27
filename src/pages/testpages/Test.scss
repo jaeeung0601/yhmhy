@@ -11,16 +11,25 @@
   flex-direction: column;
   align-items: center;
 }
+.testTextContainer{
+  width:100vw;
+  text-align: center;
+  margin:2vh;
+  display:grid;
+}
 .testQuestionMain{
-  height:100vh;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  margin:0;
 }
 .testquestion{
   font-family: 'assddfont';
-  height:100vh;
   text-align: center;
+  display: grid;
 }
 .questionitem{
-  margin-top: 150px;
+  // margin-top: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
