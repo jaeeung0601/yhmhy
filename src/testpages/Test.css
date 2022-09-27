@@ -30,6 +30,7 @@
   margin: 0px auto;
 }
 .testresult{
+  font-family: 'assddfont';
   height:100vh;
   display: flex;
   justify-content: center;
