@@ -2,7 +2,7 @@ import React from "react";
 const {Kakao} = window;
 
 const KakaoShareButton = ({data}) =>{
-  const url = ''
+  const url = 'https://bejewelled-platypus-3a3fd8.netlify.app/'
   //배포된 사이트 주소
   const reaultUrl = window.location.href;
   React.useEffect(()=>{
