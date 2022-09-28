@@ -3,6 +3,7 @@ import Community from "./pages/Community";
 import TestQuestion from './pages/testpages/TestQuestion';
 import TestResult from './pages/testpages/TestResult';
 import TestHome from './pages/testpages/TestHome'
+import Login from './pages/Login';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -11,6 +12,7 @@ function App() {
     <Router>
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/Login' element={<Login />} />
       <Route path='/Community' element={<Community />} />
       <Route path='/TestHome' element={<TestHome />} />
       <Route path='/testquestion' element={<TestQuestion />} />

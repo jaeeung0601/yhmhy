@@ -7,4 +7,5 @@ npm install —save react react-dom
 npm i bootstrap@5.2.1
 npm install reactstrap react react-dom
 npm install styled-components
+yarn add @fortawesome/fontawesome-free
 yarn add firebase
