@@ -47,8 +47,8 @@ function Post({ postId, user, username, caption, imageUrl }) {
       </h4>
       {
         <div className={comments.length > 0 ? "post__comments" : ""}>
-          {comments.map((comment) => (
-            <p key={comment}>
+          {comments.map((comment, index) => (
+            <p doc={comment.username} key={index}>
               <strong>{comment.username}</strong> {comment.text}
             </p>
           ))}
