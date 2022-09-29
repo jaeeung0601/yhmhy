@@ -154,7 +154,7 @@ function App() {
           </center>
         </div>
       </Modal>
-      <div className="app__header">
+      {/* <div className="app__header">
         <div className="app__headerWrapper">
 
           {user ? (
@@ -178,7 +178,7 @@ function App() {
             </div>
           )}
         </div>
-      </div>
+      </div> */}
       <div className="timeline">
         {user && <ImageUpload user={user} />}
         {posts.map(({ id, post }) => (

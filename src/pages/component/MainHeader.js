@@ -4,7 +4,7 @@ import Header from "./Header"
 function MainHeader() {
 
 return (
-    <div>
+    <div className='MainHeaderContainer'>
         <Header />
     </div>
 );
