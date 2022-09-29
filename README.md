@@ -9,3 +9,4 @@ npm install reactstrap react react-dom
 npm install styled-components
 npm i --save @fortawesome/fontawesome-svg-core
 npm i @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons
+node_modules의 RevealBase.js 에서 componentWillReceiveProps를 componentDidUpdate로 변경

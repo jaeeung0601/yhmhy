@@ -25,6 +25,7 @@ const Login = () => {
             provider = new firebaseInstance.auth.GithubAuthProvider();
         }
         await auth.signInWithPopup(provider);
+        document.location.href = '/'
     };
 
     return (
