@@ -1,27 +1,13 @@
 import '../assets/Style.scss';
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import Header from "./Header"
 
-function Header() {
-const navigate = useNavigate()
-const handleClickButton = ()=>{
-    //useHistory
-    navigate('/')
-}
-const handleClickButtonLogin = ()=>{
-    //useHistory
-    navigate('/Login')
-}
+function MainHeader() {
+
 return (
-    <div className="MainHeaderContainer">
-    <button className="btn header logo" type="button" onClick={handleClickButton}>
-        <i className="fa-sharp fa-solid fa-house"></i>
-    </button>
-    <button className="btn header login" type="button" onClick={handleClickButtonLogin}>
-         LogIn
-    </button>
+    <div>
+        <Header />
     </div>
 );
 }
 
-export default Header;
+export default MainHeader;

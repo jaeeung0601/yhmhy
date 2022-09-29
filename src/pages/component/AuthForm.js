@@ -32,6 +32,7 @@ const AuthForm = () => {
             data = await auth.createUserWithEmailAndPassword(email, password);
         } else { //log in
             data = await auth.signInWithEmailAndPassword(email, password);
+            document.location.href = '/'
         }
         console.log(data);
     } catch(error){
