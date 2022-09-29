@@ -12,7 +12,7 @@ import {
     faHouse,
  } from "@fortawesome/free-solid-svg-icons";
 
-const Auth = () => {
+const Login = () => {
     
     const onSocialClick = async (event) => {
         const { //ES6
@@ -47,4 +47,4 @@ const Auth = () => {
     </div>
     );
 };
-export default Auth;
+export default Login;
