@@ -1,12 +1,16 @@
 import { db, fb, auth } from "../firebase/FirebaseInit";
 import AuthForm from "./component/AuthForm";
+import "./assets/loginStyle.scss"
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faTwitter,
   faGoogle,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { 
+    faBold,
+    faHouse,
+ } from "@fortawesome/free-solid-svg-icons";
 
 const Auth = () => {
     
@@ -26,7 +30,7 @@ const Auth = () => {
     return (
         <div className="authContainer">
             <FontAwesomeIcon
-                icon={faTwitter}
+                icon={faHouse}
                 color={"#04AAFF"}
                 size="3x"
                 style={{ marginBottom: 30 }}

@@ -13,7 +13,7 @@ const handleClickButtonLogin = ()=>{
     navigate('/Login')
 }
 return (
-    <div className="headerContainer">
+    <div className="MainHeaderContainer">
     <button className="btn header logo" type="button" onClick={handleClickButton}>
         <i className="fa-sharp fa-solid fa-house"></i>
     </button>

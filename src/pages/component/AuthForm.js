@@ -1,8 +1,15 @@
 import { auth } from "../../firebase/FirebaseInit";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../assets/loginStyle.scss"
 
 const inputStyles = {};
 const AuthForm = () => {
+    const navigate = useNavigate()
+    const handleClickButton = ()=>{
+        //useHistory
+        navigate('/')
+    }
     const [email, setEmail] = useState("");
     const [password, setPassword] =  useState("");
     const [newAccount, setNewAccount] = useState(true);
@@ -33,6 +40,9 @@ const AuthForm = () => {
 
     return (
         <>
+        <button className="btn header logo" type="button" onClick={handleClickButton}>
+        <i className="fa-sharp fa-solid fa-house"></i>
+        </button>
         <form onSubmit={onSubmit} className="container">
             <input name="email" 
             type="email" 

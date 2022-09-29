@@ -177,3 +177,31 @@ $turquoise: #1abc9c;
     }
   }
 }
+
+//MainHeader Style
+
+.MainHeaderContainer {
+  width:100vw;
+  height: 15vh;
+  background-color: #c8c8c8;
+}
+.primary__button {
+  background-color: #0095f6;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 9px;
+  font-weight: 600;
+  text-align: center;
+}
+.text__button {
+  color: #0095f6;
+  font-weight: 600;
+  line-height: 28px;
+  background-color: transparent;
+}
+.app__signUp {
+  display: flex;
+  flex-direction: column;
+  margin: 28px 0;
+  row-gap: 15px;
+}

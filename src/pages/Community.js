@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Post from "./component/post/Post.js";
 import "./assets/Community.scss";
+import MainHeader from "./component/MainHeader";
 import { db, auth } from "../firebase/FirebaseInit";
 import { makeStyles } from "@material-ui/core";
 import Modal from "@material-ui/core/Modal";
@@ -87,6 +88,7 @@ function App() {
 
   return (
     <div className="app">
+      <MainHeader />
       <Modal open={openSignup} onClose={() => setOpenSignup(false)}>
         <div style={modalStyle} className={classes.paper}>
           <center>
