@@ -1,4 +1,4 @@
-import { fb, auth } from "../firebase/FirebaseInit";
+import { fb, auth, firebaseInstance } from "../firebase/FirebaseInit";
 import AuthForm from "./component/AuthForm";
 import "./assets/loginStyle.scss"
 import React from "react";
@@ -20,9 +20,9 @@ const Login = () => {
         } = event;
         let provider;
         if (name === "google"){
-            provider = new fb.auth.GoogleAuthProvider();
+            provider = new firebaseInstance.auth.GoogleAuthProvider();
         } else if (name === "github"){
-            provider = new fb.auth.GithubAuthProvider();
+            provider = new firebaseInstance.auth.GithubAuthProvider();
         }
         await auth.signInWithPopup(provider);
     };
