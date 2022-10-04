@@ -111,10 +111,10 @@ export default function Home() {
       <div className="max-w-6xl mx-auto pt-4 space-y-6">
         {offerListings && offerListings.length > 0 && (
           <div className="m-2 mb-6">
-            <h2 className="px-3 text-2xl mt-6 font-semibold">Recent offers</h2>
+            <h2 className="px-3 text-2xl mt-6 font-semibold">최신 글</h2>
             <Link to="/offers">
               <p className="px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out">
-                Show more offers
+                최신글 보기
               </p>
             </Link>
             <ul className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
@@ -130,10 +130,10 @@ export default function Home() {
         )}
         {rentListings && rentListings.length > 0 && (
           <div className="m-2 mb-6">
-            <h2 className="px-3 text-2xl mt-6 font-semibold">Places for rent</h2>
+            <h2 className="px-3 text-2xl mt-6 font-semibold">내 집 공유하기</h2>
             <Link to="/category/rent">
               <p className="px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out">
-                Show more places for rent
+               내집을 보여주세요
               </p>
             </Link>
             <ul className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
@@ -149,10 +149,10 @@ export default function Home() {
         )}
         {saleListings && saleListings.length > 0 && (
           <div className="m-2 mb-6">
-            <h2 className="px-3 text-2xl mt-6 font-semibold">Places for sale</h2>
+            <h2 className="px-3 text-2xl mt-6 font-semibold">내 집 빌려주기</h2>
             <Link to="/category/sale">
               <p className="px-3 text-sm text-blue-600 hover:text-blue-800 transition duration-150 ease-in-out">
-                Show more places for sale
+                집을 빌려주세요
               </p>
             </Link>
             <ul className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">

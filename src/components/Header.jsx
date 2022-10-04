@@ -39,7 +39,7 @@ export default function Header() {
               }`}
               onClick={() => navigate("/")}
             >
-              Home
+              Main
             </li>
             <li
               className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
@@ -47,7 +47,7 @@ export default function Header() {
               }`}
               onClick={() => navigate("/offers")}
             >
-              Offers
+              
             </li>
             <li
               className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${

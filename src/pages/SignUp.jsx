@@ -55,7 +55,7 @@ export default function SignUp() {
   }
   return (
     <section>
-      <h1 className="text-3xl text-center mt-6 font-bold">Sign Up</h1>
+      <h1 className="text-3xl text-center mt-6 font-bold">로그인</h1>
       <div className="flex justify-center flex-wrap items-center px-6 py-12 max-w-6xl mx-auto">
         <div className="md:w-[67%] lg:w-[50%] mb-12 md:mb-6">
           <img
@@ -71,7 +71,7 @@ export default function SignUp() {
               id="name"
               value={name}
               onChange={onChange}
-              placeholder="Full name"
+              placeholder="이름"
               className="mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
             />
             <input
@@ -79,7 +79,7 @@ export default function SignUp() {
               id="email"
               value={email}
               onChange={onChange}
-              placeholder="Email address"
+              placeholder="123@123.com"
               className="mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
             />
             <div className="relative mb-6">
@@ -88,7 +88,7 @@ export default function SignUp() {
                 id="password"
                 value={password}
                 onChange={onChange}
-                placeholder="Password"
+                placeholder="비밀번호"
                 className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
               />
               {showPassword ? (
@@ -118,7 +118,7 @@ export default function SignUp() {
                   to="/forgot-password"
                   className="text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out"
                 >
-                  Forgot password?
+                  비밀번호 찾기
                 </Link>
               </p>
             </div>

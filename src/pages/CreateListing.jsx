@@ -178,9 +178,9 @@ export default function CreateListing() {
   return (
     
     <main className="max-w-md px-2 mx-auto">
-      <h1 className="text-3xl text-center mt-6 font-bold">Create a Listing</h1>
+      <h1 className="text-3xl text-center mt-6 font-bold">내집 보여주기</h1>
       <form onSubmit={onSubmit}>
-        <p className="text-lg mt-6 font-semibold">Sell / Rent</p>
+        <p className="text-lg mt-6 font-semibold">내집 자랑하기 / 내집 공유하기</p>
         <div className="flex">
           <button
             type="button"
@@ -193,7 +193,7 @@ export default function CreateListing() {
                 : "bg-slate-600 text-white"
             }`}
           >
-            sell
+            자랑하기
           </button>
           <button
             type="button"
@@ -206,16 +206,16 @@ export default function CreateListing() {
                 : "bg-slate-600 text-white"
             }`}
           >
-            rent
+            공유하기
           </button>
         </div>
-        <p className="text-lg mt-6 font-semibold">Name</p>
+        <p className="text-lg mt-6 font-semibold">이름</p>
         <input
           type="text"
           id="name"
           value={name}
           onChange={onChange}
-          placeholder="Name"
+          placeholder="이름"
           maxLength="10"
           minLength="3"
           required
@@ -223,7 +223,7 @@ export default function CreateListing() {
         />
         <div className="flex space-x-6 mb-6">
           <div>
-            <p className="text-lg font-semibold">Beds</p>
+            <p className="text-lg font-semibold">침대</p>
             <input
               type="number"
               id="bedrooms"
@@ -236,7 +236,7 @@ export default function CreateListing() {
             />
           </div>
           <div>
-            <p className="text-lg font-semibold">Baths</p>
+            <p className="text-lg font-semibold">욕실</p>
             <input
               type="number"
               id="bathrooms"
@@ -249,7 +249,7 @@ export default function CreateListing() {
             />
           </div>
         </div>
-        <p className="text-lg mt-6 font-semibold">Parking spot</p>
+        <p className="text-lg mt-6 font-semibold">주차장 여부</p>
         <div className="flex">
           <button
             type="button"
@@ -260,7 +260,7 @@ export default function CreateListing() {
               !parking ? "bg-white text-black" : "bg-slate-600 text-white"
             }`}
           >
-            Yes
+            예
           </button>
           <button
             type="button"
@@ -271,10 +271,10 @@ export default function CreateListing() {
               parking ? "bg-white text-black" : "bg-slate-600 text-white"
             }`}
           >
-            no
+            아니오
           </button>
         </div>
-        <p className="text-lg mt-6 font-semibold">Furnished</p>
+        <p className="text-lg mt-6 font-semibold">식기 보유</p>
         <div className="flex">
           <button
             type="button"
@@ -285,7 +285,7 @@ export default function CreateListing() {
               !furnished ? "bg-white text-black" : "bg-slate-600 text-white"
             }`}
           >
-            yes
+            네
           </button>
           <button
             type="button"
@@ -296,16 +296,16 @@ export default function CreateListing() {
               furnished ? "bg-white text-black" : "bg-slate-600 text-white"
             }`}
           >
-            no
+            아니오
           </button>
         </div>
-        <p className="text-lg mt-6 font-semibold">Address</p>
+        <p className="text-lg mt-6 font-semibold">주소를 입력하세요</p>
         <textarea
           type="text"
           id="address"
           value={address}
           onChange={onChange}
-          placeholder="Address"
+          placeholder="주소를 입력하세요"
           required
           className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 mb-6"
         />
@@ -339,17 +339,17 @@ export default function CreateListing() {
             </div>
           </div>
         )}
-        <p className="text-lg font-semibold">Description</p>
+        <p className="text-lg font-semibold">내 방 소개하기</p>
         <textarea
           type="text"
           id="description"
           value={description}
           onChange={onChange}
-          placeholder="Description"
+          placeholder="내 방 소개하기"
           required
           className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600 mb-6"
         />
-        <p className="text-lg font-semibold">Offer</p>
+        <p className="text-lg font-semibold">최신 글 업데이트</p>
         <div className="flex mb-6">
           <button
             type="button"
@@ -360,7 +360,7 @@ export default function CreateListing() {
               !offer ? "bg-white text-black" : "bg-slate-600 text-white"
             }`}
           >
-            yes
+            네
           </button>
           <button
             type="button"
@@ -371,12 +371,12 @@ export default function CreateListing() {
               offer ? "bg-white text-black" : "bg-slate-600 text-white"
             }`}
           >
-            no
+            아니오
           </button>
         </div>
         <div className="flex items-center mb-6">
           <div className="">
-            <p className="text-lg font-semibold">Regular price</p>
+            <p className="text-lg font-semibold">금액</p>
             <div className="flex w-full justify-center items-center space-x-6">
               <input
                 type="number"
@@ -399,7 +399,7 @@ export default function CreateListing() {
         {offer && (
           <div className="flex items-center mb-6">
             <div className="">
-              <p className="text-lg font-semibold">Discounted price</p>
+              <p className="text-lg font-semibold">할인 금액</p>
               <div className="flex w-full justify-center items-center space-x-6">
                 <input
                   type="number"
@@ -417,15 +417,15 @@ export default function CreateListing() {
                       $ / Month
                     </p>
                   </div>
-                )}
-              </div>
-            </div>
+                )} 
+               </div> 
+             </div> 
           </div>
         )}
         <div className="mb-6">
-          <p className="text-lg font-semibold">Images</p>
+          <p className="text-lg font-semibold">이미지</p>
           <p className="text-gray-600">
-            The first image will be the cover (max 6)
+            내방 자랑하기 (최대 6장)
           </p>
           <input
             type="file"
@@ -441,7 +441,7 @@ export default function CreateListing() {
           type="submit"
           className="mb-6 w-full px-7 py-3 bg-blue-600 text-white font-medium text-sm uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
         >
-          Create Listing
+         내방 공유하기
         </button>
       </form>
     </main>

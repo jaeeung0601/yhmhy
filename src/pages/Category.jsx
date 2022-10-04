@@ -102,7 +102,7 @@ export default function Category() {
                 onClick={onFetchMoreListings}
                 className="bg-white px-3 py-1.5 text-gray-700 border border-gray-300 mb-6 mt-6 hover:border-slate-600 rounded transition duration-150 ease-in-out"
               >
-                Load more
+                더 보기
               </button>
             </div>
           )}
