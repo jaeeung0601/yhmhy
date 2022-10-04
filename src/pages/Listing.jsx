@@ -48,11 +48,13 @@ export default function Listing() {
         setLoading(false);
       }
     }
+    
     fetchListing();
   }, [params.listingId]);
   if (loading) {
     return <Spinner />;
   }
+  
   return (
     <main>
       <Swiper
@@ -128,19 +130,19 @@ export default function Listing() {
           <ul className="flex items-center space-x-2 sm:space-x-10 text-sm font-semibold mb-6">
             <li className="flex items-center whitespace-nowrap">
               <FaBed className="text-lg mr-1" />
-              {+listing.bedrooms > 1 ? `${listing.bedrooms} Beds` : "1 Bed"}
+              {+listing.bedrooms > 1 ? `${listing.bedrooms} 침대` : "1 침대"}
             </li>
             <li className="flex items-center whitespace-nowrap">
               <FaBath className="text-lg mr-1" />
-              {+listing.bathrooms > 1 ? `${listing.bathrooms} Baths` : "1 Bath"}
+              {+listing.bathrooms > 1 ? `${listing.bathrooms} 욕실` : "1 욕실"}
             </li>
             <li className="flex items-center whitespace-nowrap">
               <FaParking className="text-lg mr-1" />
-              {listing.parking ? "Parking spot" : "No parking"}
+              {listing.parking ? "주차가능" : "주차 불가"}
             </li>
             <li className="flex items-center whitespace-nowrap">
               <FaChair className="text-lg mr-1" />
-              {listing.furnished ? "Furnished" : "Not furnished"}
+              {listing.furnished ? "주방 사용 가능" : "주방 사용 불가"}
             </li>
           </ul>
           {listing.userRef !== auth.currentUser?.uid && !contactLandlord && (
