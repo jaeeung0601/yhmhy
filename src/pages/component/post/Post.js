@@ -2,10 +2,24 @@ import React, { useState, useEffect } from "react";
 import "./Post.css";
 import Avatar from "@material-ui/core/Avatar";
 import { db, fb } from "../../../firebase/FirebaseInit";
+import { doc, deleteDoc, updateDoc, deleteField } from "firebase/firestore";
+
 
 function Post({ postId, user, username, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
+  const onDelete = async () => {
+    const right = window.confirm("정말로 이 글을 삭제할까요?");
+    if (right) {
+      // unsubscribe = db
+      // .collection("posts")
+      // .doc(postId)
+      // .collection("comments")
+      // await fb.firestore.delete(doc(db, "comments", postId));
+      console.log(fb.firestore.postId);
+    }
+    };
+
   useEffect(() => {
     let unsubscribe;
     if (postId) {
@@ -71,6 +85,11 @@ function Post({ postId, user, username, caption, imageUrl }) {
               type="submit"
             >
               Post
+            </button>
+            <button
+              className="comment__button text__button" 
+              onClick={onDelete}>
+              Delete
             </button>
           </div>
         </form>

@@ -1,4 +1,4 @@
-import { fb, auth, firebaseInstance } from "../firebase/FirebaseInit";
+import { auth, firebaseInstance } from "../firebase/FirebaseInit";
 import AuthForm from "./component/AuthForm";
 import "./assets/loginStyle.scss"
 import React from "react";
@@ -8,7 +8,6 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { 
-    faBold,
     faHouse,
  } from "@fortawesome/free-solid-svg-icons";
 

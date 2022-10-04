@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../assets/loginStyle.scss"
 
-const inputStyles = {};
+// const inputStyles = {};
 const AuthForm = () => {
     const navigate = useNavigate()
     const handleClickButton = ()=>{

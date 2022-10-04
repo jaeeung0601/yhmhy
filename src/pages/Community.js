@@ -27,6 +27,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
+
 function App() {
   const classes = useStyles();
   const [modalStyle] = useState(getModalStyle);
@@ -117,12 +118,7 @@ function App() {
               Sign up
             </button>
           </form>
-          <center className="authFooter">
-            <small>
-              &copy; 2021 Instagram Tribute by{" "}
-              <a href="mailto:bkrofegha@gmail.com"> Blessing Krofegha</a>
-            </small>
-          </center>
+
         </div>
       </Modal>
       <Modal open={openLogin} onClose={() => setOpenLogin(false)}>
