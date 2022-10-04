@@ -14,6 +14,10 @@ function Home() {
     //useHistory
     navigate('/Community')
 }
+  const handleClickButtonMkt = ()=>{
+    //useHistory
+   navigate('/MktCommunity')
+}
   return (
     <div className= "MainBG">
       <Header />,
@@ -37,6 +41,11 @@ function Home() {
             <div className="buttonB">
               <button className="btn homebtn" type="button" onClick={handleClickButtonCM}>
                 커뮤니티
+              </button>
+            </div>
+            <div className="buttonD">
+              <button className="btn homebtn" type="button" onClick={handleClickButtonMkt}>
+                마켓
               </button>
             </div>
               </Fade>

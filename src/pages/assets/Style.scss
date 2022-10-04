@@ -85,7 +85,8 @@
   grid-template-areas:
 		"MainText MainText"
 		"   a     c  "
-		"   b     c  ";
+		"   b     c  "
+    "   d     c  ";
   background-color: rgba(255, 255, 255, 0.70);
 
 }
@@ -97,6 +98,10 @@
     place-items: center;
     grid-area: b;
   }
+.buttonD {
+    place-items: center;
+    grid-area: d;
+}
 h3 {
     font-family: "GowunDodum-Regular" ;
     font-size: 3rem;

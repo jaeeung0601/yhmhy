@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Post from "./component/post/Post.js";
+import PostMk from "./component/postMk/PostMk.js";
 import "./assets/Community.scss";
 import MainHeader from "./component/MainHeader";
 import { db, auth } from "../firebase/FirebaseInit";
@@ -28,10 +28,10 @@ const useStyles = makeStyles(() => ({
 }));
 
 
-function Community() {
+function MktCommunity() {
   const classes = useStyles();
   const [modalStyle] = useState(getModalStyle);
-  const [posts, setPosts] = useState([]);
+  const [marketposts, setMkPosts] = useState([]);
   const [openSignup, setOpenSignup] = useState(false);
   const [openLogin, setOpenLogin] = useState(false);
   const [username, setUsername] = useState("");
@@ -51,10 +51,10 @@ function Community() {
   }, [user, username]);
 
   useEffect(() => {
-    db.collection("posts")
+    db.collection("marketposts")
       .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
-        setPosts(
+        setMkPosts(
           snapshot.docs.map((doc) => ({
             id: doc.id,
             post: doc.data(),
@@ -152,8 +152,8 @@ function Community() {
       </Modal>
       <div className="timeline">
         {user && <ImageUpload user={user} />}
-        {posts.map(({ id, post }) => (
-          <Post
+        {marketposts.map(({ id, post }) => (
+          <PostMk
             key={id}
             postId={id}
             user={user}
@@ -167,4 +167,4 @@ function Community() {
   );
 }
 
-export default Community;
+export default MktCommunity;
