@@ -78,7 +78,7 @@
 
 .MainWrapper {
   position: static;
-  height: 50vh;
+  height: 55vh;
   min-width: 100vw;
   display: grid;
   place-items: center;
@@ -102,15 +102,19 @@
     place-items: center;
     grid-area: d;
 }
-h3 {
+.MainHeadText {
     font-family: "GowunDodum-Regular" ;
     font-size: 3rem;
     grid-area: MainText;
+    height: 15vh;
+    place-items: center;
 }
-div.MainText {
+div.Maindiv {
     font-style: oblique;
     grid-area: c;
     font-size: 1rem;
+
+    
 }
 
 $green: #2ecc71;

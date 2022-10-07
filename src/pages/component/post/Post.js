@@ -8,17 +8,27 @@ import { doc, deleteDoc, updateDoc, deleteField } from "firebase/firestore";
 function Post({ postId, user, username, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
-  const onDelete = async () => {
+  const onDelete = (e) => {
     const right = window.confirm("정말로 이 글을 삭제할까요?");
     if (right) {
-      // unsubscribe = db
-      // .collection("posts")
-      // .doc(postId)
-      // .collection("comments")
-      // await fb.firestore.delete(doc(db, "comments", postId));
-      console.log(fb.firestore.postId);
+        e.preventDefault();
+        db.collection("posts").doc(postId).collection("comments").delete({
+        text: comment,
+        username: user.displayName,
+        timestamp: fb.firestore.FieldValue.serverTimestamp(),
+        });
+        setComment("");
     }
     };
+    // const postComment = (e) => {
+    //   e.preventDefault();
+    //   db.collection("posts").doc(postId).collection("comments").add({
+    //     text: comment,
+    //     username: user.displayName,
+    //     timestamp: fb.firestore.FieldValue.serverTimestamp(),
+    //   });
+    //   setComment("");
+    // };
 
   useEffect(() => {
     let unsubscribe;

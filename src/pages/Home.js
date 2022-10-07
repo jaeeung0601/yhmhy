@@ -23,12 +23,12 @@ function Home() {
       <Header />,
         <div className= "MainWrapper">
           <Fade clear>
-          <h3 className="font-face">
+          <h3 className="MainHeadText">
           니집내집
           </h3>
           </Fade>
             <Fade claer delay={400}>
-            <div className="MainText">
+            <div className="Maindiv">
                 당신을 위한 인테리어 플랫폼
             </div>
             </Fade>
