@@ -2,24 +2,21 @@ import React, { useState, useEffect } from "react";
 import "./Post.css";
 import Avatar from "@material-ui/core/Avatar";
 import { db, fb } from "../../../firebase/FirebaseInit";
-import { doc, deleteDoc, updateDoc, deleteField } from "firebase/firestore";
+import { doc, updateDoc, deleteField, getFirestore, deleteDoc } from "firebase/firestore";
 
 
 function Post({ postId, user, username, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
-  const onDelete = (e) => {
+
+  const database= getFirestore();
+  const docRef = doc(database, "posts", postId);
+  async function onDelete (e) {
     const right = window.confirm("정말로 이 글을 삭제할까요?");
     if (right) {
         e.preventDefault();
-        db.collection("posts").doc(postId).collection("comments").delete({
-        text: comment,
-        username: user.displayName,
-        timestamp: fb.firestore.FieldValue.serverTimestamp(),
-        });
-        setComment("");
-    }
-    };
+        await deleteDoc(docRef);
+    }};
     // const postComment = (e) => {
     //   e.preventDefault();
     //   db.collection("posts").doc(postId).collection("comments").add({
