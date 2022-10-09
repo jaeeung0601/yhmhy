@@ -61,10 +61,10 @@ function Home() {
         </div>
         <div className='BtnContainer'>
         <button className="AbsoluteBtn HomeBtn1" type="button" onClick={handleClickButton}>
-          커뮤니티
+          테스트 <br />시작하기
         </button>
         <button className="AbsoluteBtn HomeBtn2" type="button" onClick={handleClickButtonCM}>
-          테스트 <br />시작하기
+          커뮤니티
         </button>
         <button className="AbsoluteBtn HomeBtn3" type="button" onClick={handleClickButtonMkt}>
           마켓

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Post from "./component/post/Post.js";
 import "./assets/Community.scss";
-import MainHeader from "./component/MainHeader";
+import Header from "./component/Header";
 import { db, auth } from "../firebase/FirebaseInit";
 import { makeStyles } from "@material-ui/core";
 import Modal from "@material-ui/core/Modal";
@@ -89,7 +89,8 @@ function Community() {
 
   return (
     <div className="app">
-      <MainHeader />
+      <Header />
+      <div className='MainContainer'>
       <Modal open={openSignup} onClose={() => setOpenSignup(false)}>
         <div style={modalStyle} className={classes.paper}>
           <center>
@@ -162,6 +163,7 @@ function Community() {
             imageUrl={post.imageUrl}
           />
         ))}
+      </div>
       </div>
     </div>
   );
