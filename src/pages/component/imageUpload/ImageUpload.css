@@ -1,0 +1,28 @@
+.imageUpload{
+  width: 100%;
+  max-width: 1500px;
+  display: grid;
+  place-content: center;
+  padding-left: 250px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  
+}
+  .progress {
+    width: 100%;
+    
+  }
+  .uploadCapBtn {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  
+  }
+  .uploadCap {
+    width: 70%;
+
+  }
+  .uploadBtn {
+    width: 30%;
+
+  }
