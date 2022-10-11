@@ -32,10 +32,11 @@
   margin:0;
   padding:0;
   background-color: #fffaf0;
-
+  
 }
 .btn.header{
-color:#FFA07A;
+font-size: 1.5vh;
+  color:#FFA07A;
 border:none;
 background:#FFFACD;
 overflow: hidden;
@@ -112,7 +113,7 @@ position: absolute; right: 15px; top: 15px;
     height: auto;
     width:30vw;
     font-family: "GowunDodum-Regular";
-    font-size: 1rem;
+    font-size: 2vh;
 
 }
 .BtnContainer {
@@ -134,7 +135,7 @@ position: absolute; right: 15px; top: 15px;
   width:30vw;
   height:15vh;
   font-family: "GowunDodum-Regular";
-  font-size: 3rem;
+  font-size: 4.5vh;
   place-items: center;
 }
 .HomeImg{
@@ -145,8 +146,9 @@ position: absolute; right: 15px; top: 15px;
 
 .AbsoluteBtn {
     font-family: "GowunDodum-Regular";
-    font-size: 1rem;
-    color:#FFA07A;
+    font-size: 1.5vh;
+    line-height: 1.6vh;
+    color:#ea916d;
     border:none;
     background:#FFFACD;
     border-radius: 0.3em;
