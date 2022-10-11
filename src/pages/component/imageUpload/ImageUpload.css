@@ -1,7 +1,7 @@
 .imageUpload{
 background-color:#FFFBF0;
 width: 350px;
-height: 75px;
+height: 80px;
 box-sizing: border-box;
 border-radius: 10px;
 justify-content: center;
@@ -12,7 +12,9 @@ text-align: center;
 }
 
 .textwir{
-  background-color:white;
+  background-color:azure;
+  width: 350px;
+  border-radius: 10px;
 }
 .progress{
   width: 100%;
