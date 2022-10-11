@@ -1,5 +1,5 @@
 .imageUpload{
-background-color:#FFFBF0;
+background-color:#F9F9F9;
 width: 350px;
 height: 80px;
 box-sizing: border-box;
@@ -12,7 +12,7 @@ text-align: center;
 }
 
 .textwir{
-  background-color:azure;
+  background-color:#FFF3F3;
   width: 350px;
   border-radius: 10px;
 }
