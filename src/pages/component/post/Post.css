@@ -3,8 +3,8 @@
   margin-bottom: 50px;
   background-color:ghostwhite;
   width: 100%;
-  max-width: 451px;
-  max-height: 500px;
+  max-width: 400px;
+  max-height: 450px;
   padding: 20px;
   border-radius: 10px;
   border:1px solid lightgray;
@@ -56,8 +56,8 @@
   }
    .post__image{
     width:100%;
-    max-width: 400px;
-    max-height: 250px;
+    max-width: 370px;
+    max-height: 220px;
     transition: 0.4s;
     vertical-align: bottom;
   }
