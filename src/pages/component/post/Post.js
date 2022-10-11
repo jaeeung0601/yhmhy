@@ -69,7 +69,7 @@ function Post({ postId, user, username, caption, imageUrl }) {
       </div>
       <img className="post__image" src={imageUrl} alt="" />
       <h4 className="post__text">
-        <strong>{username}</strong> {caption}
+        <strong className="user__name">{username}</strong> {caption}
       </h4>
       {
         <div className={comments.length > 0 ? "post__comments" : ""}>

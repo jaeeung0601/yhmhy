@@ -3,8 +3,7 @@
   margin-bottom: 50px;
   background-color: ghostwhite;
   width: 100%;
-  /* max-width: 450px; */
-  /* max-height: 500px; */
+  max-width: 450px;
   padding: 20px;
   border-radius: 10px;
   border:1px solid lightgray;
@@ -20,14 +19,7 @@
   margin: 0px 20px 20px 20px;
 }
 
-.imageUpload{
-  width: 100%;
-  max-width: 1500px;
-  display: grid;
-  place-content: center;
-  padding-left: 250px;
-  padding-top: 10px;
-}
+
 
 .post__comments  {
     margin-bottom: 10px;
@@ -70,4 +62,8 @@
     max-height: 250px;
     transition: 0.4s;
     vertical-align: bottom;
+  }
+  .user__name{
+    font-size:1rem;
+    color:gray;
   }

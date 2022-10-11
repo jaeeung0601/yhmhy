@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./PostMk.css";
 import Avatar from "@material-ui/core/Avatar";
 import { db, fb } from "../../../firebase/FirebaseInit";
-import { doc, updateDoc, deleteField, getFirestore, deleteDoc } from "firebase/firestore";
+import { doc, getDoc, updateDoc, deleteField, getFirestore, deleteDoc } from "firebase/firestore";
+import "../imageUpload/MktImageUpload";
 
-
-function PostMk({ postId, user, username, caption, imageUrl }) {
+function PostMk({ postId, user, username, price, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
 
@@ -33,8 +33,10 @@ function PostMk({ postId, user, username, caption, imageUrl }) {
     }
     return () => {
       unsubscribe();
+      
     };
   }, [postId]);
+
   const postComment = (e) => {
     e.preventDefault();
     db.collection("marketposts").doc(postId).collection("comments").add({
@@ -44,6 +46,8 @@ function PostMk({ postId, user, username, caption, imageUrl }) {
     });
     setComment("");
   };
+  
+
   return (
     <div className="post">
       <div className="post__header">
@@ -52,11 +56,19 @@ function PostMk({ postId, user, username, caption, imageUrl }) {
           alt={username}
 
         />
-        <h3>{username}</h3>
+        <h3>{username}</h3> 
+        <h4 className="post__marketprice">
+        {username} {price}
+        </h4>
+        <button
+              className="comment__button delete__button" 
+              onClick={onDelete}>
+              Delete
+        </button>
       </div>
       <img className="post__image" src={imageUrl} alt="" />
       <h4 className="post__text">
-        <strong>{username}</strong> {caption}
+        <strong className="user__name">{username}</strong> {caption} 
       </h4>
       {
         <div className={comments.length > 0 ? "post__comments" : ""}>
@@ -84,11 +96,6 @@ function PostMk({ postId, user, username, caption, imageUrl }) {
               type="submit"
             >
               Post
-            </button>
-            <button
-              className="comment__button text__button" 
-              onClick={onDelete}>
-              Delete
             </button>
           </div>
         </form>

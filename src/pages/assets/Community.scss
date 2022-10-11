@@ -17,7 +17,7 @@ button {
     font-weight: 600;
     line-height: 28px;
     background-color: transparent;
-    margin-left: 70%;
+    margin-left: 75%;
   }
   .app__signUp {
     display: flex;
@@ -65,6 +65,7 @@ button {
     display:flex;
   }
   .delete__button{
+    float:right;
     color: #0095f6;
     border: 1.5px solid #0095f6;
     border-radius: 0.5rem;
@@ -73,7 +74,5 @@ button {
     font-weight: 600;
     line-height: 28px;
     background-color: transparent;
-    left: 90%;
-    display:flex;
-    position:relative;
+    right: 20px;
   }
