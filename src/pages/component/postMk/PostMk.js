@@ -2,23 +2,22 @@ import React, { useState, useEffect } from "react";
 import "./PostMk.css";
 import Avatar from "@material-ui/core/Avatar";
 import { db, fb } from "../../../firebase/FirebaseInit";
-import { doc, deleteDoc, updateDoc, deleteField } from "firebase/firestore";
+import { doc, updateDoc, deleteField, getFirestore, deleteDoc } from "firebase/firestore";
 
 
 function Post({ postId, user, username, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
-  const onDelete = async () => {
+
+  const database= getFirestore();
+  const docRef = doc(database, "marketposts", postId);
+  async function onDelete (e) {
     const right = window.confirm("정말로 이 글을 삭제할까요?");
     if (right) {
-      // unsubscribe = db
-      // .collection("posts")
-      // .doc(postId)
-      // .collection("comments")
-      // await fb.firestore.delete(doc(db, "comments", postId));
-      console.log(fb.firestore.postId);
-    }
-    };
+        e.preventDefault();
+        await deleteDoc(docRef);
+    }};
+
 
   useEffect(() => {
     let unsubscribe;

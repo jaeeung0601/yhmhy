@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PostMk from "./component/postMk/PostMk.js";
 import "./assets/Community.scss";
-import MainHeader from "./component/MainHeader";
+import Header from "./component/Header";
 import { db, auth } from "../firebase/FirebaseInit";
 import { makeStyles } from "@material-ui/core";
 import Modal from "@material-ui/core/Modal";
@@ -89,7 +89,8 @@ function MktCommunity() {
 
   return (
     <div className="app">
-      <MainHeader />
+      <Header />
+      <div className='MainContainer'>
       <Modal open={openSignup} onClose={() => setOpenSignup(false)}>
         <div style={modalStyle} className={classes.paper}>
           <center>
@@ -152,16 +153,17 @@ function MktCommunity() {
       </Modal>
       <div className="timeline">
         {user && <ImageUpload user={user} />}
-        {marketposts.map(({ id, post }) => (
+        {marketposts.map(({ id, marketposts }) => (
           <PostMk
             key={id}
             postId={id}
             user={user}
-            username={post.username}
-            caption={post.caption}
-            imageUrl={post.imageUrl}
+            username={marketposts.username}
+            caption={marketposts.caption}
+            imageUrl={marketposts.imageUrl}
           />
         ))}
+      </div>
       </div>
     </div>
   );
