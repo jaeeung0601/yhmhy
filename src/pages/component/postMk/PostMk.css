@@ -14,7 +14,7 @@
     display: flex;
     width: inherit;
     background-color: #fafafa;
-    border-radius: 10px;
+    border-radius: 11px;
     border: 1px solid lightgray;
   }
   .comment__wrapper input {
