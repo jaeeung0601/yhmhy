@@ -5,7 +5,7 @@ import Header from "./component/Header";
 import { db, auth } from "../firebase/FirebaseInit";
 import { makeStyles } from "@material-ui/core";
 import Modal from "@material-ui/core/Modal";
-import ImageUpload from "./component/imageUpload/ImageUpload";
+import ImageUpload from "./component/imageUpload/MktImageUpload";
 
 function getModalStyle() {
   const top = 50;
@@ -153,14 +153,14 @@ function MktCommunity() {
       </Modal>
       <div className="timeline">
         {user && <ImageUpload user={user} />}
-        {marketposts.map(({ id, marketposts }) => (
+        {marketposts.map(({ id, post }) => (
           <PostMk
             key={id}
             postId={id}
             user={user}
-            username={marketposts.username}
-            caption={marketposts.caption}
-            imageUrl={marketposts.imageUrl}
+            username={post.username}
+            caption={post.caption}
+            imageUrl={post.imageUrl}
           />
         ))}
       </div>

@@ -1,9 +1,10 @@
 .post{
   color:black;
   margin-bottom: 50px;
-  background-color: white;
+  background-color: ghostwhite;
   width: 100%;
-  max-width: 451px;
+  max-width: 450px;
+  max-height: 500px;
   padding: 20px;
   border-radius: 10px;
   border:1px solid lightgray;
@@ -32,7 +33,7 @@
     margin-bottom: 10px;
     background-color: white;
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     padding: 25px;
     border-radius: 15px;
     border:1px solid lightgray;
@@ -45,7 +46,7 @@
   
   .comment__wrapper  {
     
-    background-color: #fafafa;
+    background-color: lightgray;
     border-radius: 8px;
     border: 1px solid lightgray;
   }
@@ -63,7 +64,8 @@
   }
    .post__image{
     width:100%;
-    max-width: 410px;
+    max-width: 400px;
+    max-height: 250px;
     transition: 0.4s;
     vertical-align: bottom;
   }

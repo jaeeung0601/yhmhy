@@ -5,7 +5,7 @@ import { db, fb } from "../../../firebase/FirebaseInit";
 import { doc, updateDoc, deleteField, getFirestore, deleteDoc } from "firebase/firestore";
 
 
-function Post({ postId, user, username, caption, imageUrl }) {
+function PostMk({ postId, user, username, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
 
@@ -97,4 +97,4 @@ function Post({ postId, user, username, caption, imageUrl }) {
   );
 }
 
-export default Post;
+export default PostMk;
