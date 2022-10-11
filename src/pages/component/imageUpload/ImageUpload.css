@@ -1,28 +1,30 @@
 .imageUpload{
-  width: 100%;
-  max-width: 1500px;
-  display: grid;
-  place-content: center;
-  padding-left: 250px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  
+background-color:#FFFBF0;
+width: 350px;
+height: 75px;
+box-sizing: border-box;
+border-radius: 10px;
+justify-content: center;
+align-items: center;
+margin : 0 auto;
+margin-bottom: 20px;
+text-align: center;
 }
-  .progress {
-    width: 100%;
-    
-  }
+
+.textwir{
+  background-color:white;
+}
+.progress{
+  width: 100%;
+} 
+
   .uploadCapBtn {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
-  
   }
-  .uploadCap {
-    width: 70%;
 
-  }
   .uploadBtn {
-    width: 30%;
+    width: 20%;
 
   }
