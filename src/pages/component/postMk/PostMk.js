@@ -58,7 +58,7 @@ function PostMk({ postId, user, username, price, caption, imageUrl }) {
         />
         <h3>{username}</h3> 
         <h4 className="post__marketprice">
-        {username} {price}
+        {price}
         </h4>
         <button
               className="comment__button delete__button" 
