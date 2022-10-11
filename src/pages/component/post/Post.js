@@ -61,6 +61,11 @@ function Post({ postId, user, username, caption, imageUrl }) {
 
         />
         <h3>{username}</h3>
+        <button
+              className="comment__button delete__button" 
+              onClick={onDelete}>
+              Delete
+        </button>
       </div>
       <img className="post__image" src={imageUrl} alt="" />
       <h4 className="post__text">
@@ -93,11 +98,7 @@ function Post({ postId, user, username, caption, imageUrl }) {
             >
               Post
             </button>
-            <button
-              className="comment__button text__button" 
-              onClick={onDelete}>
-              Delete
-            </button>
+
           </div>
         </form>
       )}

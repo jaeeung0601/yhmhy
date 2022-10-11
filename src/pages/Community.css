@@ -1,0 +1,9 @@
+.MainContainer{
+    background-image: url(./assets/MainBgCm.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    min-height:90vh;
+    height: auto;
+}

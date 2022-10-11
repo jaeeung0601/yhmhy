@@ -3,8 +3,8 @@
   margin-bottom: 50px;
   background-color: ghostwhite;
   width: 100%;
-  max-width: 450px;
-  max-height: 500px;
+  /* max-width: 450px; */
+  /* max-height: 500px; */
   padding: 20px;
   border-radius: 10px;
   border:1px solid lightgray;
@@ -49,6 +49,8 @@
     background-color: lightgray;
     border-radius: 8px;
     border: 1px solid lightgray;
+    max-width:90%;
+    margin: 5px;
   }
   .comment__wrapper input {
     width: 90%;

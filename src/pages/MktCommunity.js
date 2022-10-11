@@ -6,6 +6,7 @@ import { db, auth } from "../firebase/FirebaseInit";
 import { makeStyles } from "@material-ui/core";
 import Modal from "@material-ui/core/Modal";
 import ImageUpload from "./component/imageUpload/MktImageUpload";
+import "./Community.css"
 
 function getModalStyle() {
   const top = 50;

@@ -53,7 +53,8 @@ function ImageUpload({ user }) {
     <div className="imageUpload">
       <input
         type="text"
-        placeholder="Enter a caption..."
+        placeholder="글을 작성해 주세요...."
+        className=" textwir"
         onChange={(e) => setCaption(e.target.value)}
         value={caption}
       />
