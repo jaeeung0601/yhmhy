@@ -36,6 +36,7 @@ function MktCommunity() {
   const [openSignup, setOpenSignup] = useState(false);
   const [openLogin, setOpenLogin] = useState(false);
   const [username, setUsername] = useState("");
+  const [price, setPrice] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState(null);
@@ -75,6 +76,7 @@ function MktCommunity() {
       .catch((err) => alert(err.message));
     setOpenSignup(false);
     setUsername("");
+    setPrice("");
     setEmail("");
     setPassword("");
   };
@@ -161,6 +163,7 @@ function MktCommunity() {
             user={user}
             username={post.username}
             caption={post.caption}
+            price={post.price}
             imageUrl={post.imageUrl}
           />
         ))}
