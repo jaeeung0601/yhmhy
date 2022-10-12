@@ -55,7 +55,7 @@ transition: color 150ms ease-in-out;
   transform: translateX(-50%);
   width: 0;
   height: 100%;
-  background: #3498db;
+  background: #D2B48C;
   z-index: -1;
   transition: width 150ms ease-in-out;
 }
@@ -108,12 +108,19 @@ position: absolute; right: 15px; top: 15px;
 .TextContainer {
     background-color: rgba(255,255,255,0.9);
     grid-area: hometext;
-    padding-top: 15vh;
-    padding-left: 3vw;
+    padding-top: 10vh;
+
     height: auto;
     width:30vw;
     font-family: "GowunDodum-Regular";
-    font-size: 2vh;
+    font-size: 1.8vh;
+    text-align: center;
+    .bold__text{
+      margin-bottom: 5vh;
+      font-size: 3vh;
+      color: gray;
+
+    }
 
 }
 .BtnContainer {
@@ -135,7 +142,8 @@ position: absolute; right: 15px; top: 15px;
   width:30vw;
   height:15vh;
   font-family: "GowunDodum-Regular";
-  font-size: 4.5vh;
+  font-weight: bold;
+  font-size: 5vh;
   place-items: center;
 }
 .HomeImg{
@@ -146,9 +154,9 @@ position: absolute; right: 15px; top: 15px;
 
 .AbsoluteBtn {
     font-family: "GowunDodum-Regular";
-    font-size: 1.5vh;
+    font-size: 1.8vh;
     line-height: 1.6vh;
-    color:#ea916d;
+    color:#8c492e;
     border:none;
     background:#FFFACD;
     border-radius: 0.3em;

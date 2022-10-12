@@ -56,7 +56,10 @@ return (
       니집내집
     </div>
     <div className='TextContainer'>
-        "당신을 위한 인테리어 플렛폼"  
+        <div className="bold__text">"당신을 위한 인테리어 플렛폼"</div><br />
+        어디서부터 어떻게 손을 대야 할지 모르는 여러분께 <br />
+        여러 인테리어 스타일링을 소개합니다.<br />
+        취향과 성향에 맞는 당신만에 디자인을 찾아 보세요!
     </div>
     <div className='BtnContainer'>
     <button className="AbsoluteBtn HomeBtn1" type="button" onClick={handleClickButton}>
