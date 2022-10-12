@@ -37,8 +37,8 @@ return (
     scrollbar={{ draggable: true }}
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
-    autoplay={{ delay: 3000 }}	// 추가
-    speed={1000}
+    autoplay={{ delay: 8000 }}	// 추가
+    speed={2500}
     >
       <SwiperSlide>
       <img className="HomeImg" src={img1} />
