@@ -58,7 +58,7 @@ function PostMk({ postId, user, username, price, caption, imageUrl }) {
         />
         <h3>{username}</h3> 
         <h4 className="post__marketprice">
-        {price}
+        희망가격: <span>{price}</span>
         </h4>
         <button
               className="comment__button delete__button" 

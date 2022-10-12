@@ -13,12 +13,14 @@
   place-content: center;
   display: grid;
   }
-  
+ 
   .textwir{
     background-color:#FFF3F3;
     width: 350px;
-    border-radius: 10px;
+    border: 2px solid lightgray;
+    border-radius: 0.3rem ;
     display: block;
+    margin-top: 7px;
   }
   .progress{
     width: 100%;
