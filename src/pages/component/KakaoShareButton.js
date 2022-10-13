@@ -32,7 +32,7 @@ const shareKakao = () =>{
     ],
   });
 }
-  return(<button onClick={shareKakao}>카카오톡 공유하기</button>)
+  return(<button onClick={shareKakao} style={{fontFamily: 'assddfont'}}>카카오톡 공유하기</button>)
 }
 
 export default KakaoShareButton
