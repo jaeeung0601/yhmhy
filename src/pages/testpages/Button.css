@@ -1,5 +1,5 @@
-
 .custom-btn{
+  font-family: 'assddfont';
   margin: 10px;
   border-radius: 5px;
   padding: 10px 25px;
@@ -45,9 +45,10 @@
   transition:800ms ease all;
 }
 .questionitem>button{
+  font-family: 'assddfont';
   width: 600px;
   border-radius: 10px;
-  margin: 15px auto;
+  margin: 10px auto;
   padding: 20px;
   border: 1px solid black;
 }

@@ -29,13 +29,16 @@
   display: grid;
 }
 .questionitem{
-  // margin-top: 150px;
+  font-family: 'assddfont';
+  text-align: center;
+  display: grid;
+  //margin-top: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .questionitem>h1{
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .questionitem>img{
   display: block; 
@@ -44,8 +47,19 @@
 .testresult{
   height:100vh;
   font-family: 'assddfont';
+  line-height: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.testresult>h2{
+  line-height: 60px;
+  font-size: 30px;
+}
+.testresult>h3{
+  font-size: 20px;
+}
+.testresult>p{
+  font-size: 15px;
 }
