@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./PostMk.css";
 import Avatar from "@material-ui/core/Avatar";
 import { db, fb } from "../../../firebase/FirebaseInit";
-import { doc, getDoc, updateDoc, deleteField, getFirestore, deleteDoc } from "firebase/firestore";
+import { doc, getFirestore, deleteDoc } from "firebase/firestore";
 import "../imageUpload/MktImageUpload";
 
 function PostMk({ postId, user, username, price, caption, imageUrl }) {

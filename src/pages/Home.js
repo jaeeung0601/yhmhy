@@ -41,13 +41,13 @@ return (
     speed={2500}
     >
       <SwiperSlide>
-      <img className="HomeImg" src={img1} />
+      <img className="HomeImg" src={img1} alt='homeimg1'/>
       </SwiperSlide>
       <SwiperSlide>
-      <img className="HomeImg" src={img2} />
+      <img className="HomeImg" src={img2} alt='homeimg2'/>
       </SwiperSlide>
       <SwiperSlide>
-      <img className="HomeImg" src={img3} />
+      <img className="HomeImg" src={img3} alt='homeimg3'/>
       </SwiperSlide>
 
     </Swiper>

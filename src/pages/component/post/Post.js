@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Post.css";
 import Avatar from "@material-ui/core/Avatar";
 import { db, fb } from "../../../firebase/FirebaseInit";
-import { doc, updateDoc, deleteField, getFirestore, deleteDoc } from "firebase/firestore";
+import { doc, getFirestore, deleteDoc } from "firebase/firestore";
 
 
 function Post({ postId, user, username, caption, imageUrl }) {
