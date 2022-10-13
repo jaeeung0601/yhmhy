@@ -45,6 +45,8 @@
     margin: 5px;
   }
   .comment__wrapper input {
+    height: auto;
+    padding: 7px 0px 7px 10px;
     width: 90%;
     border: none;
     background: transparent;
