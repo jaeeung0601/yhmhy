@@ -28,14 +28,14 @@ TechStack <br /><br />
  Used API<br />
 <img src="https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=Swiper&logoColor=white"/>
 <img src="https://img.shields.io/badge/React Router-CA4245?style=flat-square&logo=React Router&logoColor=white"/>
- <img src="https://img.shields.io/badge/styled-components-DB7093?style=flat-square&logo=styled_components&logoColor=white"/>
+ <img src="https://img.shields.io/badge/styled-components-DB7093?style=flat-square&logo=styled-components&logoColor=white"/>
  
 
 </div>
 
 <div align="left">
  <h3> Korea IT Academy FrontEnd class</h3><br />
- <h2 color="blue"> working period </h2><br />
+ <h2 color="blue"> working period </h2>
  September, 2022 - October, 2022 (for 1 month)<br />
  <h2 color="blue"> member </h2>
  임강욱(팀장)<br />
