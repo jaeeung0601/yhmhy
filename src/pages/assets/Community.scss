@@ -6,6 +6,7 @@ button {
   }
   .primary__button {
     background-color: #0095f6;
+    border: none;
     border-radius: 4px;
     color: #fff;
     padding: 5px 9px;
@@ -17,6 +18,7 @@ button {
     font-weight: 600;
     line-height: 28px;
     background-color: transparent;
+    float: right;
   }
   .app__signUp {
     display: flex;
@@ -49,4 +51,29 @@ button {
   }
   .authFooter a {
     color: #0095f6;
+  }
+  .MainContainer {
+    position:absolute;
+    top:10vh;
+    padding-top:5vh;
+    background-image: url(./MainBg.jpg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100vh;
+    place-content: center;
+    display:flex;
+  }
+  .delete__button{
+    float:right;
+    color: #0095f6;
+    border: 1.5px solid #0095f6;
+    border-radius: 0.5rem;
+    padding: 1px 4px;
+    margin-bottom:5px;
+    font-weight: 600;
+    line-height: 28px;
+    background-color: transparent;
+    right: 20px;
   }

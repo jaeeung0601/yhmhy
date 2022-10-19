@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Post from "./component/post/Post.js";
+import PostMk from "./component/postMk/PostMk.js";
 import "./assets/Community.scss";
 import Header from "./component/Header";
 import { db, auth } from "../firebase/FirebaseInit";
 import { makeStyles } from "@material-ui/core";
 import Modal from "@material-ui/core/Modal";
-import ImageUpload from "./component/imageUpload/ImageUpload";
+import ImageUpload from "./component/imageUpload/MktImageUpload";
 import "./Community.css"
 
 function getModalStyle() {
@@ -29,13 +29,14 @@ const useStyles = makeStyles(() => ({
 }));
 
 
-function Community() {
+function MktCommunity() {
   const classes = useStyles();
   const [modalStyle] = useState(getModalStyle);
-  const [posts, setPosts] = useState([]);
+  const [marketposts, setMkPosts] = useState([]);
   const [openSignup, setOpenSignup] = useState(false);
   const [openLogin, setOpenLogin] = useState(false);
   const [username, setUsername] = useState("");
+  const [price, setPrice] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState(null);
@@ -52,10 +53,10 @@ function Community() {
   }, [user, username]);
 
   useEffect(() => {
-    db.collection("posts")
+    db.collection("marketposts")
       .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
-        setPosts(
+        setMkPosts(
           snapshot.docs.map((doc) => ({
             id: doc.id,
             post: doc.data(),
@@ -75,6 +76,7 @@ function Community() {
       .catch((err) => alert(err.message));
     setOpenSignup(false);
     setUsername("");
+    setPrice("");
     setEmail("");
     setPassword("");
   };
@@ -154,13 +156,14 @@ function Community() {
       </Modal>
       <div className="timeline">
         {user && <ImageUpload user={user} />}
-        {posts.map(({ id, post }) => (
-          <Post
+        {marketposts.map(({ id, post }) => (
+          <PostMk
             key={id}
             postId={id}
             user={user}
             username={post.username}
             caption={post.caption}
+            price={post.price}
             imageUrl={post.imageUrl}
           />
         ))}
@@ -170,4 +173,4 @@ function Community() {
   );
 }
 
-export default Community;
+export default MktCommunity;

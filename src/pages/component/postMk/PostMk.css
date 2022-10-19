@@ -20,13 +20,12 @@
 }
 
 
-
 .post__comments  {
     margin-bottom: 10px;
     background-color: white;
     width: 100%;
     max-width: 100%;
-    padding: 25px;
+    padding: 10px;
     border-radius: 15px;
     border:1px solid lightgray;
     position: relative;
@@ -45,8 +44,6 @@
     margin: 5px;
   }
   .comment__wrapper input {
-    height: auto;
-    padding: 7px 0px 7px 10px;
     width: 90%;
     border: none;
     background: transparent;
@@ -55,14 +52,14 @@
     border: none;
   }
   .comment__wrapper button {
-    width: 6vw;
-    height: 5vh;
+    width: 50px;
+    height: 4.5vh;
     padding: 2px;
     text-align: center;
     border: 1.5px solid #0095f6;
     border-radius: 0.5rem;
   }
-   .post__image{
+  .post__image{
     width:100%;
     max-width: 400px;
     max-height: 250px;
@@ -72,4 +69,16 @@
   .user__name{
     font-size:1rem;
     color:gray;
+  }
+  .post__marketprice{
+    font-size: 1.5vh;
+    text-align: right;
+    color: gray;
+  }
+  .post__marketprice span{
+    font-size: 2.5vh;
+    color:rgb(0, 0, 0)
+  }
+  .post__text{
+    margin:10px 0;
   }

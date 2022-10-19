@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { storage, db, fb } from "../../../firebase/FirebaseInit";
 import "./ImageUpload.css";
 
-function ImageUpload({ user }) {
+function MktImageUpload({ user }) {
   const [image, setImage] = useState(null);
   const [progress, setProgress] = useState(0);
   const [caption, setCaption] = useState("");
+  const [price, setPrice]= useState("");
   const handleChange = (e) => {
     if (e.target.files[0]) {
       setImage(e.target.files[0]);
@@ -35,14 +36,16 @@ function ImageUpload({ user }) {
           .getDownloadURL()
           .then((url) => {
             // Post image inside db
-            db.collection("posts").add({
+            db.collection("marketposts").add({
               timestamp: fb.firestore.FieldValue.serverTimestamp(),
               caption: caption,
+              price: price,
               imageUrl: url,
               username: user.displayName,
             });
             setProgress(0);
             setCaption("");
+            setPrice("");
             setImage(null);
           });
       }
@@ -58,6 +61,13 @@ function ImageUpload({ user }) {
         onChange={(e) => setCaption(e.target.value)}
         value={caption}
       />
+      <input
+        type="text"
+        placeholder="가격을 기입해 주세요..."
+        className=" textwir"
+        onChange={(e) => setPrice(e.target.value)}
+        value={price}
+      />
       <progress className="progress" value={progress} max="100" />
       <div className="uploadCapBtn">
         <input className="uploadCap" type="file" onChange={handleChange} />
@@ -69,4 +79,4 @@ function ImageUpload({ user }) {
   );
 }
 
-export default ImageUpload;
+export default MktImageUpload;

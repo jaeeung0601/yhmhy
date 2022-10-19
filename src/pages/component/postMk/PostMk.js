@@ -1,37 +1,29 @@
 import React, { useState, useEffect } from "react";
-import "./Post.css";
+import "./PostMk.css";
 import Avatar from "@material-ui/core/Avatar";
 import { db, fb } from "../../../firebase/FirebaseInit";
 import { doc, getFirestore, deleteDoc } from "firebase/firestore";
+import "../imageUpload/MktImageUpload";
 
-
-function Post({ postId, user, username, caption, imageUrl }) {
+function PostMk({ postId, user, username, price, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
 
   const database= getFirestore();
-  const docRef = doc(database, "posts", postId);
+  const docRef = doc(database, "marketposts", postId);
   async function onDelete (e) {
     const right = window.confirm("정말로 이 글을 삭제할까요?");
     if (right) {
         e.preventDefault();
         await deleteDoc(docRef);
     }};
-    // const postComment = (e) => {
-    //   e.preventDefault();
-    //   db.collection("posts").doc(postId).collection("comments").add({
-    //     text: comment,
-    //     username: user.displayName,
-    //     timestamp: fb.firestore.FieldValue.serverTimestamp(),
-    //   });
-    //   setComment("");
-    // };
+
 
   useEffect(() => {
     let unsubscribe;
     if (postId) {
       unsubscribe = db
-        .collection("posts")
+        .collection("marketposts")
         .doc(postId)
         .collection("comments")
         .orderBy("timestamp", "asc")
@@ -41,17 +33,21 @@ function Post({ postId, user, username, caption, imageUrl }) {
     }
     return () => {
       unsubscribe();
+      
     };
   }, [postId]);
+
   const postComment = (e) => {
     e.preventDefault();
-    db.collection("posts").doc(postId).collection("comments").add({
+    db.collection("marketposts").doc(postId).collection("comments").add({
       text: comment,
       username: user.displayName,
       timestamp: fb.firestore.FieldValue.serverTimestamp(),
     });
     setComment("");
   };
+  
+
   return (
     <div className="post">
       <div className="post__header">
@@ -60,7 +56,10 @@ function Post({ postId, user, username, caption, imageUrl }) {
           alt={username}
 
         />
-        <h3>{username}</h3>
+        <h3>{username}</h3> 
+        <h4 className="post__marketprice">
+        희망가격: <span>{price}</span>
+        </h4>
         <button
               className="comment__button delete__button" 
               onClick={onDelete}>
@@ -69,7 +68,7 @@ function Post({ postId, user, username, caption, imageUrl }) {
       </div>
       <img className="post__image" src={imageUrl} alt="" />
       <h4 className="post__text">
-        <strong className="user__name">{username}</strong> {caption}
+        <strong className="user__name">{username}</strong> {caption} 
       </h4>
       {
         <div className={comments.length > 0 ? "post__comments" : ""}>
@@ -98,7 +97,6 @@ function Post({ postId, user, username, caption, imageUrl }) {
             >
               Post
             </button>
-
           </div>
         </form>
       )}
@@ -106,4 +104,4 @@ function Post({ postId, user, username, caption, imageUrl }) {
   );
 }
 
-export default Post;
+export default PostMk;
