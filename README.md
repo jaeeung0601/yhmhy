@@ -11,13 +11,13 @@ npm i --save @fortawesome/fontawesome-svg-core
 npm i @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons
 node_modules의 RevealBase.js 에서 componentWillReceiveProps를 componentDidUpdate로 변경
  -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=니집내집&fontSize=90">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=white&height=200&section=header&text=니집내집&fontSize=90">
 </img>
-###Site URL###
-:point_right: #http://kaas12.netlify.app# :point_left:
-
+<h3>Site URL <br /> <h3>
+ <h5> :point_right: http://kaas12.netlify.app :point_left: </h5>
+ 
 <div align="center">
-TechStack <br />
+TechStack <br /><br />
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
 <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white"/>
 <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"/>
