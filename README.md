@@ -46,7 +46,9 @@ TechStack <br /><br />
  
  <div align="center">
  <h3 color="blue" > Site Discription </h3>
- For those unfamiliar with the interior, it provides interior recommendation functions tailored to individual tastes through simple tests.
+ For those unfamiliar with the interior, it provides interior recommendation functions
+<br />
+ tailored to individual tastes through simple tests.
 <br />
  User information management and post upload functions were implemented using a firebase.
 <br />
