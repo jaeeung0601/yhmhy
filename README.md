@@ -11,6 +11,10 @@ npm i --save @fortawesome/fontawesome-svg-core
 npm i @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons
 node_modules의 RevealBase.js 에서 componentWillReceiveProps를 componentDidUpdate로 변경
  -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=니집내집&fontSize=90">
+</img>
+###Site URL###
+:point_right: #http://kaas12.netlify.app# :point_left:
 
 <div align="center">
 TechStack <br />
@@ -31,9 +35,9 @@ TechStack <br />
 
 <div align="left">
  <h3> Korea IT Academy FrontEnd class</h3><br />
- <h2> working period </h2><br />
+ <h2 color="blue"> working period </h2><br />
  September, 2022 - October, 2022 (for 1 month)<br />
- <h2> member </h2><br />
+ <h2 color="blue"> member </h2><br />
  임강욱(팀장)<br />
  최재응<br />
  선영
@@ -41,7 +45,7 @@ TechStack <br />
  </div>
  
  <div align="center">
- <h3 color="#1572B6" > Site Discription </h3>
+ <h3 color="blue" > Site Discription </h3>
  For those unfamiliar with the interior, it provides interior recommendation functions tailored to individual tastes through simple tests.
 <br />
  User information management and post upload functions were implemented using a firebase.
