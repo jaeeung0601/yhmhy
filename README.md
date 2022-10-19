@@ -37,7 +37,7 @@ TechStack <br /><br />
  <h3> Korea IT Academy FrontEnd class</h3><br />
  <h2 color="blue"> working period </h2><br />
  September, 2022 - October, 2022 (for 1 month)<br />
- <h2 color="blue"> member </h2><br />
+ <h2 color="blue"> member </h2>
  임강욱(팀장)<br />
  최재응<br />
  선영
