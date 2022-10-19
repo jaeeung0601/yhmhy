@@ -40,7 +40,7 @@ TechStack <br /><br />
  <h2 color="blue"> member </h2>
  임강욱(팀장)<br />
  최재응<br />
- 선영
+ 박선영
  
  </div>
  
