@@ -14,7 +14,7 @@ node_modules의 RevealBase.js 에서 componentWillReceiveProps를 componentDidUp
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=니집내집&fontSize=90&animation=fadeIn&fontColor=cccccc">
 </img>
 <h3>Site URL <br /> <h3>
- <h5> :point_right: http://kaas12.netlify.app :point_left: </h5>
+ <h2> :point_right: http://kaas12.netlify.app :point_left: </h2>
  
 <div align="center">
 TechStack <br /><br />
