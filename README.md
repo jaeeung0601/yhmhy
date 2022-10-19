@@ -17,7 +17,7 @@ node_modules의 RevealBase.js 에서 componentWillReceiveProps를 componentDidUp
  <h2> :point_right: http://kaas12.netlify.app :point_left: </h2>
  
 <div align="center">
-TechStack <br /><br />
+<h3>TechStack</h3><br />
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
 <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white"/>
 <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"/>
@@ -25,7 +25,7 @@ TechStack <br /><br />
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
 <br /><br />
- Used API<br /><br />
+ <h3>Used API</h3><br />
 <img src="https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=Swiper&logoColor=white"/>
 <img src="https://img.shields.io/badge/React Router-CA4245?style=flat-square&logo=React Router&logoColor=white"/>
  <img src="https://img.shields.io/badge/styled components-DB7093?style=flat-square&logo=styled-components&logoColor=white"/>
